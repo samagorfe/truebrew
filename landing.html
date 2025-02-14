@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrueBrew Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        .landing-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center horizontally */
+            justify-content: center; /* Center vertically */
+            min-height: 100vh; /* Ensure full viewport height */
+            /* Add any background or other styling here */
+        }
+        .search-area {
+            display: flex;
+            align-items: center; /* Align items vertically in search area */
+        }
+
+        .search-divider {
+            margin: 0 10px; /* Space around the "OR" */
+            font-weight: bold; /* Make "OR" bold */
+        }
+        #landing-search-input::placeholder { /* Style the placeholder */
+            color: lightgray;
+        }
+
+    </style>
+</head>
+<body id="landing-page">
+    <div class="landing-container">
+        <img src="logo.png" alt="TrueBrew Logo" id="landing-logo">
+        <p class="landing-subtitle">Yelp for true coffee shop lovers.</p>
+        <div class="search-area">
+            <input type="text" id="landing-city-input" placeholder="Enter City...">
+            <span class="search-divider">OR</span>
+            <input type="text" id="landing-search-input" placeholder="Search coffee shops...">
+            <button id="landing-search-button">Search</button>
+        </div>
+    </div>
+</body>
+</html>

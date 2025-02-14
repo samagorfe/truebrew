@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrueBrew Coffee Shop Ratings</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYghDhTwpTNdtXW3IRxzeetE0Df9ta9uU&libraries=places&callback=initMap" async defer></script>
+
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="TrueBrew Logo" id="logo">
+        <div id="search-area">
+            <input type="text" id="city-input" placeholder="Enter City...">
+            <input type="text" id="search-input" placeholder="Search coffee shops...">
+            <button id="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </button>
+        </div>
+        <select id="sort-dropdown">
+            <option value="distance">Sort by Distance</option>
+            <option value="recommended">Sort by Recommended</option>
+        </select>
+    </header>
+    <h2>Coffee Shops in Dallas, TX</h2>
+    <main>
+        <div id="map"></div>
+        <section id="coffee-shop-list">
+    <div class="coffee-shop" onclick="openModal('1418', '1418 K Ave, Plano, TX 75074')" style="display: flex; align-items: center;">
+                <img src="1418logo.png" alt="1418 logo" id="coffee-shop-logo">
+                <div class="coffee-shop-info">
+                    <h2 class="coffee-shop-title">1418</h2>
+                    <div class="rating">☕☕☕☕☕</div>
+                    <p>Upbeat indie coffeehouse with plush couches & chairs offering espresso drinks, smoothies & pastries.</p>
+                    <p>1418 K Ave, Plano, TX 75074</p>
+                </div>
+            </div>
+            <div class="coffee-shop" onclick="openModal('Black Rock Coffee Bar', '710 W Parker Rd, Plano, TX 75075')" style="display: flex; align-items: center;">
+                <img src="blackrocklogo.png" alt="Black Rock Logo" class="blackrock-logo">
+                <div class="coffee-shop-info">
+                    <h2 class="coffee-shop-title">Black Rock Coffee Bar</h2>
+                    <div class="rating">☕☕☕☕</div>
+                    <p>Contemporary coffee chain serving espresso beverages, plus smoothies.</p>
+                    <p>710 W Parker Rd, Plano, TX 75075</p>
+                </div>
+            </div>
+            <div class="coffee-shop" onclick="openModal('Mudleaf', '3100 Independence Pkwy #300, Plano, TX 75075')" style="display: flex; align-items: center;">
+                <img src="mudleaflogo.png" alt="Mudleaf Logo" id="coffee-shop-logo">
+                <div class="coffee-shop-info">
+                    <h2 class="coffee-shop-title">Mudleaf</h2>
+                    <div class="rating">☕☕☕☕</div>
+                    <p>Easygoing, spacious outpost serving hand-crafted coffee & espresso drinks alongside sandwiches.
+                    </p>
+                    <p>3100 Independence Pkwy #300, Plano, TX 75075</p>
+                </div>
+            </div>
+                <div class="coffee-shop" onclick="openModal('White Rhino', '2909 Thomas Ave, Dallas, TX 75204')" style="display: flex; align-items: center;">
+                    <img src="whiterhino.png" alt="White Rhino" id="coffee-shop-logo">
+                    <div class="coffee-shop-info">
+                        <h2 class="coffee-shop-title">White Rhino</h2>
+                        <div class="rating">☕☕☕☕☕</div>
+                        <p>Coffee shop featuring signature beverages, breakfast, lunch, and weekend brunch, plus beer and wine.
+                        </p>
+                        <p>2909 Thomas Ave, Dallas, TX 75204</p>
+                    </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html><!-- Sliding Coffee Shop Details Panel -->
+<div id="coffee-shop-panel">
+    <div class="panel-content">
+        <span class="close-panel" onclick="closePanel()">&times;</span>
+        <h2 id="panel-title">1418</h2>
+        <div class="rating">☕☕☕☕☕</div>
+        <p>Upbeat indie coffeehouse with plush couches & chairs offering espresso drinks, smoothies & pastries.</p>
+        <p><strong>Address:</strong> 1418 K Ave, Plano, TX 75074</p>
+        <p><strong>Operating Hours:</strong> Mon-Fri: 7 AM - 10 PM, Sat-Sun: 8 AM - 11 PM</p>
+        
+        <h3>Gallery</h3>
+        <div class="image-gallery">
+            <img src="1418 images/image1.jpg" alt="1418 Interior">
+            <img src="1418 images/image2.jpg" alt="1418 Exterior">
+            <img src="1418 images/image3.jpg" alt="1418 Seating">
+            <img src="1418 images/image4.jpg" alt="1418 Menu">
+        </div>
+    </div>
+</div>

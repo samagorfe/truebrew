@@ -1,0 +1,354 @@
+body, html {
+    margin: 0; /*removes the default margin*/
+    font-family: 'Times New Roman', Times, serif; /* customizing font */
+    padding: 10px 15px 15px; /* Top padding remains 0, left and right 15px, bottom 15px */
+    
+}
+
+#sort-dropdown {
+    position: absolute;
+    right: 20px;
+}
+header {
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+#logo {
+    width: 20vw; /* Larger logo for better visibility */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#coffee-shop-logo{
+    max-width: 80px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#coffee-shop-logo #blackrocklogo{
+max-width: 100px;
+}
+/* Search area and sort dropdown styling */
+#search-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between elements */
+}
+
+#city-input, #search-input {
+    padding: 10px;
+    margin-right: 5px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 25%; /* Adjusted width for city input */
+}
+
+#search-input {
+    width: 75%; /* Remaining width for the main search input */
+}
+
+#search-button {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+
+#coffee-shop-list {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: stretch; /* Ensure full width */
+}
+
+#map {
+    height: 100vh; /* Full view height */
+    float: left; /* Align to the right */
+    flex: auto;
+    box-sizing: border-box;
+}
+
+
+.coffee-shop {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.modal {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s;
+
+}
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    min-width: 300px;
+}
+.rating {
+    font-size: 18px;
+    color: #FFAB00;
+    margin-top: -5px; /* Pull rating closer to the title */
+}
+.coffee-shop-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2px; /* Reduce space between title and rating */
+}
+.close-button {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.coffee-shop:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@media (min-width: 801px) {
+    #coffee-shop-list, #map {
+        width: 40%;
+    }
+    #map {
+        width: 60%;
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+    
+}
+
+#landing-page {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.landing-container {
+    text-align: center;
+}
+
+#landing-logo {
+    width: 50%; /* Increased size */
+    max-width: 300vw; /* Larger than before */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.landing-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.landing-subtitle {
+    font-size: 18px;
+    color: #666;
+    font-style: italic; /* Italicized */
+    margin-top: -5px; /* Bring closer to logo */
+}
+
+.search-area {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#landing-city-input, #landing-search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 30%;
+}
+
+#landing-search-button {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background: #333;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#error-page {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.error-container {
+    text-align: center;
+}
+
+#error-logo {
+    width: 50%;
+    max-width: 100vw;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.error-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+#error-message {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#back-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background: #333;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.search-divider {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    margin: 0 10px;
+    align-self: center;
+}
+#info-modal {
+    display: none !important; /* Force the modal to stay hidden */
+}
+.coffee-shop-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.coffee-shop p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+#coffee-shop-panel {
+    position: fixed;
+    right: -40%; /* Initially off-screen */
+    top: 0;
+    width: 40%;
+    height: 100%;
+    background: white;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    z-index: 100;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.panel-content {
+    position: relative;
+}
+
+.close-panel {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-gallery img {
+    width: 48%;
+    border-radius: 8px;
+}
+.search-divider {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    margin: 0 10px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blackrock-logo {
+    max-width: 90px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px;
+}
