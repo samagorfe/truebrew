@@ -1,29 +1,14 @@
-<<<<<<< HEAD
 body, html {
-    margin: 0; /*removes the default margin*/
+    margin: 0; /* removes the default margin */
     font-family: 'Times New Roman', Times, serif; /* customizing font */
-    padding: 10px 15px 15px; /* Top padding remains 0, left and right 15px, bottom 15px */
-    
-=======
-/* styles.css */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Times New Roman', Times, serif;
-    /* Default background and text color */
-    background-color: var(--page-bg, white);
-    color: var(--page-text, #333);
->>>>>>> 1eb31c6 (Add initial website files and updates)
+    padding: 10px 15px 15px; /* top: 10px, right/left: 15px, bottom: 15px */
 }
 
 #sort-dropdown {
     position: absolute;
     right: 20px;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 1eb31c6 (Add initial website files and updates)
 header {
     color: #333;
     padding: 20px;
@@ -32,47 +17,29 @@ header {
 }
 
 #logo {
-<<<<<<< HEAD
     width: 20vw; /* Larger logo for better visibility */
-=======
-    width: 20vw;
->>>>>>> 1eb31c6 (Add initial website files and updates)
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-<<<<<<< HEAD
-#coffee-shop-logo{
-=======
 #coffee-shop-logo {
->>>>>>> 1eb31c6 (Add initial website files and updates)
     max-width: 80px;
     height: auto;
     border-radius: 50%;
     margin-right: 20px;
 }
-<<<<<<< HEAD
-#coffee-shop-logo #blackrocklogo{
-max-width: 100px;
-}
-/* Search area and sort dropdown styling */
-=======
 
 #coffee-shop-logo #blackrocklogo {
     max-width: 100px;
 }
 
->>>>>>> 1eb31c6 (Add initial website files and updates)
+/* Search area and sort dropdown styling */
 #search-area {
     display: flex;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
-    gap: 10px; /* Space between elements */
-=======
-    gap: 10px;
->>>>>>> 1eb31c6 (Add initial website files and updates)
+    gap: 10px; /* space between elements */
 }
 
 #city-input, #search-input {
@@ -81,19 +48,11 @@ max-width: 100px;
     font-size: 16px;
     border: 2px solid #ccc;
     border-radius: 5px;
-<<<<<<< HEAD
-    width: 25%; /* Adjusted width for city input */
+    width: 25%; /* adjusted width for city input */
 }
 
 #search-input {
-    width: 75%; /* Remaining width for the main search input */
-=======
-    width: 25%;
-}
-
-#search-input {
-    width: 75%;
->>>>>>> 1eb31c6 (Add initial website files and updates)
+    width: 75%; /* remaining width for the main search input */
 }
 
 #search-button {
@@ -104,11 +63,6 @@ max-width: 100px;
     outline: none;
 }
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 1eb31c6 (Add initial website files and updates)
 footer {
     background: #333;
     color: #fff;
@@ -119,38 +73,19 @@ footer {
     padding: 10px;
 }
 
-<<<<<<< HEAD
-
-
-
 #coffee-shop-list {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: stretch; /* Ensure full width */
+    flex-direction: column; /* stack items vertically */
+    align-items: stretch; /* ensure full width */
 }
 
 #map {
-    height: 100vh; /* Full view height */
-    float: left; /* Align to the right */
-=======
-#coffee-shop-list {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-}
-
-#map {
-    height: 100vh;
-    float: left;
->>>>>>> 1eb31c6 (Add initial website files and updates)
+    height: 100vh; /* full view height */
+    float: left; /* align to the right */
     flex: auto;
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 1eb31c6 (Add initial website files and updates)
 .coffee-shop {
     display: flex;
     align-items: center;
@@ -164,10 +99,6 @@ footer {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 1eb31c6 (Add initial website files and updates)
 .modal {
     position: fixed;
     z-index: 2;
@@ -179,13 +110,8 @@ footer {
     justify-content: center;
     align-items: center;
     animation: fadeIn 0.3s;
-<<<<<<< HEAD
-
-}
-=======
 }
 
->>>>>>> 1eb31c6 (Add initial website files and updates)
 .modal-content {
     background-color: #fff;
     padding: 20px;
@@ -194,33 +120,20 @@ footer {
     width: 50%;
     min-width: 300px;
 }
-<<<<<<< HEAD
-.rating {
-    font-size: 18px;
-    color: #FFAB00;
-    margin-top: -5px; /* Pull rating closer to the title */
-}
-=======
 
 .rating {
     font-size: 18px;
     color: #FFAB00;
-    margin-top: -5px;
+    margin-top: -5px; /* pull rating closer to the title */
 }
 
->>>>>>> 1eb31c6 (Add initial website files and updates)
 .coffee-shop-title {
     font-size: 22px;
     font-weight: bold;
     color: #333;
-<<<<<<< HEAD
-    margin-bottom: 2px; /* Reduce space between title and rating */
-}
-=======
-    margin-bottom: 2px;
+    margin-bottom: 2px; /* reduce space between title and rating */
 }
 
->>>>>>> 1eb31c6 (Add initial website files and updates)
 .close-button {
     float: right;
     font-size: 28px;
@@ -228,10 +141,6 @@ footer {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 1eb31c6 (Add initial website files and updates)
 .close-button:hover,
 .close-button:focus {
     color: black;
@@ -239,22 +148,14 @@ footer {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 1eb31c6 (Add initial website files and updates)
 .coffee-shop:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 1eb31c6 (Add initial website files and updates)
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 @media (min-width: 801px) {
@@ -262,34 +163,17 @@ footer {
         width: 40%;
     }
     #map {
-<<<<<<< HEAD
         width: 60%;
     }
 }
 
-
 * {
     box-sizing: border-box;
-    
 }
 
 #landing-page {
     background-color: white;
     display: flex;
-=======
-        width: 58%;
-    }
-}
-
-* {
-    box-sizing: border-box;
-}
-
-/* Landing page styles */
-#landing-page {
-    display: flex;
-    background-color: var(--page-bg, white); /* Default light background */
->>>>>>> 1eb31c6 (Add initial website files and updates)
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -302,13 +186,8 @@ footer {
 }
 
 #landing-logo {
-<<<<<<< HEAD
-    width: 50%; /* Increased size */
-    max-width: 300vw; /* Larger than before */
-=======
-    width: 50%;
-    max-width: 300vw;
->>>>>>> 1eb31c6 (Add initial website files and updates)
+    width: 50%; /* increased size */
+    max-width: 300vw; /* larger than before */
     height: auto;
     margin-bottom: 20px;
 }
@@ -322,13 +201,8 @@ footer {
 .landing-subtitle {
     font-size: 18px;
     color: #666;
-<<<<<<< HEAD
-    font-style: italic; /* Italicized */
-    margin-top: -5px; /* Bring closer to logo */
-=======
-    font-style: italic;
-    margin-top: -5px;
->>>>>>> 1eb31c6 (Add initial website files and updates)
+    font-style: italic; /* italicized */
+    margin-top: -5px; /* bring closer to logo */
 }
 
 .search-area {
@@ -354,14 +228,9 @@ footer {
     font-weight: bold;
     border-radius: 5px;
 }
-<<<<<<< HEAD
-#error-page {
-    background-color: white;
-=======
 
 #error-page {
-    background-color: var(--page-bg, white);
->>>>>>> 1eb31c6 (Add initial website files and updates)
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -404,68 +273,7 @@ footer {
     font-weight: bold;
     border-radius: 5px;
 }
-<<<<<<< HEAD
-.search-divider {
-    font-size: 18px;
-    font-weight: bold;
-    color: #666;
-    margin: 0 10px;
-    align-self: center;
-}
-#info-modal {
-    display: none !important; /* Force the modal to stay hidden */
-}
-.coffee-shop-info {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
 
-.coffee-shop p {
-    font-size: 14px;
-    color: #666;
-    margin: 0;
-}
-#coffee-shop-panel {
-    position: fixed;
-    right: -40%; /* Initially off-screen */
-    top: 0;
-    width: 40%;
-    height: 100%;
-    background: white;
-    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
-    transition: right 0.3s ease-in-out;
-    z-index: 100;
-    padding: 20px;
-    overflow-y: auto;
-}
-
-.panel-content {
-    position: relative;
-}
-
-.close-panel {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.image-gallery img {
-    width: 48%;
-    border-radius: 8px;
-}
-=======
-
->>>>>>> 1eb31c6 (Add initial website files and updates)
 .search-divider {
     font-size: 18px;
     font-weight: bold;
@@ -476,14 +284,9 @@ footer {
     justify-content: center;
     align-items: center;
 }
-<<<<<<< HEAD
-.blackrock-logo {
-    max-width: 90px; /* Adjust size as needed */
-=======
 
 .blackrock-logo {
-    max-width: 90px;
->>>>>>> 1eb31c6 (Add initial website files and updates)
+    max-width: 90px; /* adjust size as needed */
     height: auto;
     margin-right: 20px;
 }
