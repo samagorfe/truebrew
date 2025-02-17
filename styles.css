@@ -1,7 +1,11 @@
+/* styles.css */
 body, html {
-    margin: 0; /* removes the default margin */
-    font-family: 'Times New Roman', Times, serif; /* customizing font */
-    padding: 10px 15px 15px; /* top: 10px, right/left: 15px, bottom: 15px */
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    /* Default background and text color */
+    background-color: var(--page-bg, white);
+    color: var(--page-text, #333);
 }
 
 #sort-dropdown {
@@ -17,7 +21,7 @@ header {
 }
 
 #logo {
-    width: 20vw; /* Larger logo for better visibility */
+    width: 20vw;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -34,12 +38,11 @@ header {
     max-width: 100px;
 }
 
-/* Search area and sort dropdown styling */
 #search-area {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px; /* space between elements */
+    gap: 10px;
 }
 
 #city-input, #search-input {
@@ -48,11 +51,11 @@ header {
     font-size: 16px;
     border: 2px solid #ccc;
     border-radius: 5px;
-    width: 25%; /* adjusted width for city input */
+    width: 25%;
 }
 
 #search-input {
-    width: 75%; /* remaining width for the main search input */
+    width: 75%;
 }
 
 #search-button {
@@ -75,13 +78,13 @@ footer {
 
 #coffee-shop-list {
     display: flex;
-    flex-direction: column; /* stack items vertically */
-    align-items: stretch; /* ensure full width */
+    flex-direction: column;
+    align-items: stretch;
 }
 
 #map {
-    height: 100vh; /* full view height */
-    float: left; /* align to the right */
+    height: 100vh;
+    float: left;
     flex: auto;
     box-sizing: border-box;
 }
@@ -124,14 +127,14 @@ footer {
 .rating {
     font-size: 18px;
     color: #FFAB00;
-    margin-top: -5px; /* pull rating closer to the title */
+    margin-top: -5px;
 }
 
 .coffee-shop-title {
     font-size: 22px;
     font-weight: bold;
     color: #333;
-    margin-bottom: 2px; /* reduce space between title and rating */
+    margin-bottom: 2px;
 }
 
 .close-button {
@@ -154,8 +157,8 @@ footer {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 @media (min-width: 801px) {
@@ -163,7 +166,7 @@ footer {
         width: 40%;
     }
     #map {
-        width: 60%;
+        width: 58%;
     }
 }
 
@@ -171,9 +174,10 @@ footer {
     box-sizing: border-box;
 }
 
+/* Landing page styles */
 #landing-page {
-    background-color: white;
     display: flex;
+    background-color: var(--page-bg, white); /* Default light background */
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -186,8 +190,8 @@ footer {
 }
 
 #landing-logo {
-    width: 50%; /* increased size */
-    max-width: 300vw; /* larger than before */
+    width: 50%;
+    max-width: 300vw;
     height: auto;
     margin-bottom: 20px;
 }
@@ -201,8 +205,8 @@ footer {
 .landing-subtitle {
     font-size: 18px;
     color: #666;
-    font-style: italic; /* italicized */
-    margin-top: -5px; /* bring closer to logo */
+    font-style: italic;
+    margin-top: -5px;
 }
 
 .search-area {
@@ -230,7 +234,7 @@ footer {
 }
 
 #error-page {
-    background-color: white;
+    background-color: var(--page-bg, white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -286,7 +290,7 @@ footer {
 }
 
 .blackrock-logo {
-    max-width: 90px; /* adjust size as needed */
+    max-width: 90px;
     height: auto;
     margin-right: 20px;
 }
