@@ -1,0 +1,186 @@
+/* Popup Panel Styles */
+.popup-panel {
+    position: fixed;
+    top: 0;
+    right: -40%;
+    width: 40%;
+    height: 100%;
+    background: #f8f9fa;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out, width 0.3s ease, border-radius 0.3s ease;
+    z-index: 1000;
+    display: flex;
+}
+
+/* Slide panel in when shown */
+.popup-panel.show {
+    right: 0;
+}
+
+/* Expanded full-screen style */
+.popup-panel.expanded {
+    width: 100%;
+    right: 0;
+    border-radius: 0;
+}
+
+/* Exit bar on the left */
+.exit-bar {
+    width: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Exit arrow inside exit bar (arrow now points right) */
+.close-arrow {
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Main content of the popup */
+.popup-content {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    overflow-y: auto;
+}
+
+/* Expand button positioned at top right */
+.expand-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Popup header with shop logo and title */
+.popup-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.popup-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Criteria grid: 2 rows of 5 items */
+.criteria-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.criteria-item {
+    text-align: center;
+}
+
+.criteria-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.criteria-rating {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.criteria-label {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #333;
+}
+
+/* Popup gallery (limited to 40% of viewport height) */
+.popup-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    margin-top: 20px;
+    max-height: 40vh;
+    overflow: hidden;
+}
+
+.popup-gallery img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Popup footer: address, hours, and mini menu */
+.popup-footer {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.address-hours {
+    font-size: 14px;
+}
+
+.popup-menu {
+    font-size: 14px;
+}
+
+.popup-menu h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.popup-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+}
+
+.popup-menu ul li {
+    margin-bottom: 5px;
+}
+
+/* Dark Mode Styles for Popup */
+body.dark-mode .popup-panel {
+    background: #222;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .exit-bar {
+    background: #333;
+}
+
+body.dark-mode .close-arrow,
+body.dark-mode .expand-button,
+body.dark-mode .criteria-label,
+body.dark-mode .popup-header,
+body.dark-mode .address-hours,
+body.dark-mode .popup-menu h3,
+body.dark-mode .popup-menu ul li {
+    color: #fff;
+}
+
+body.dark-mode .popup-header {
+    border-bottom: 1px solid #444;
+}
+
+body.dark-mode .popup-footer {
+    border-top: 1px solid #444;
+}

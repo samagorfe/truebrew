@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>City or Coffee Shop Not Found</title>
@@ -28,5 +29,62 @@
             });
         });
     </script>
+=======
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City or Coffee Shop Not Found</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Dark mode styles */
+    body.dark-mode {
+      background-color: #000;
+      color: #fff;
+    }
+    body.dark-mode a,
+    body.dark-mode h1,
+    body.dark-mode h2,
+    body.dark-mode h3,
+    body.dark-mode p,
+    body.dark-mode span,
+    body.dark-mode button {
+      color: #fff;
+      background-color: inherit;
+    }
+  </style>
+</head>
+<body id="error-page">
+  <div class="error-container">
+    <img src="smileemoji.png" alt="Sad Face" id="error-logo">
+    <h1 class="error-title">Sorry!</h1>
+    <p id="error-message"></p>
+    <button id="back-button">Go Back</button>
+    <!-- Optional: Dark Mode Toggle Button -->
+    <button id="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const params = new URLSearchParams(window.location.search);
+      const name = params.get("name") || "That entry";
+
+      // Display the dynamic error message using template literals
+      document.getElementById("error-message").innerHTML = `<strong>${name}</strong> is not on <strong>TrueBrew</strong> yet, check back soon!`;
+
+      // Go back button
+      document.getElementById("back-button").addEventListener("click", function() {
+          window.location.href = "landing.html";
+      });
+    });
+
+    // Dark mode toggle script
+    if (localStorage.getItem("dark-mode") === "true") {
+      document.body.classList.add("dark-mode");
+    }
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+      localStorage.setItem("dark-mode", document.body.classList.contains("dark-mode"));
+    }
+  </script>
+>>>>>>> 1eb31c6 (Add initial website files and updates)
 </body>
 </html>

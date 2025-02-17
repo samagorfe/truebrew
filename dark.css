@@ -1,0 +1,99 @@
+/* dark.css */
+:root {
+    --dark-bg: #000000; /* Pure black background */
+    --dark-surface: #1e1e1e;
+    --dark-border: #333;
+    --light-text: #ffffff; /* White text */
+  }
+  
+  /* For the landing page (body with id "landing-page") */
+  #landing-page.dark-mode {
+    background-color: var(--dark-bg) !important;
+    color: var(--light-text) !important;
+  }
+  
+  /* Global dark mode styles */
+  body.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+  }
+  
+  /* Header in dark mode */
+  body.dark-mode header {
+    background-color: var(--dark-surface);
+    border-color: var(--dark-border);
+    color: var(--light-text);
+  }
+  
+  /* Form elements in dark mode */
+  body.dark-mode input,
+  body.dark-mode textarea,
+  body.dark-mode select,
+  body.dark-mode button {
+    background-color: var(--dark-surface);
+    color: var(--light-text);
+    border-color: var(--dark-border);
+  }
+  
+  /* Dark Mode Toggle Button Styles */
+  #dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2000;
+    color: var(--light-text);
+    outline: none;
+  }
+  
+  #dark-mode-toggle .cs-moon,
+  #dark-mode-toggle .cs-sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  #dark-mode-toggle .cs-moon {
+    opacity: 1;
+  }
+  
+  #dark-mode-toggle .cs-sun {
+    opacity: 0;
+  }
+  
+  /* Toggle icon swap for landing page */
+  #landing-page.dark-mode #dark-mode-toggle .cs-moon {
+    opacity: 0;
+    transform: translate(-50%, -150%);
+  }
+  
+  #landing-page.dark-mode #dark-mode-toggle .cs-sun {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Tooltip for toggle button */
+  #dark-mode-toggle:hover::after {
+    content: "Switch to dark mode";
+    position: absolute;
+    top: 110%;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 3px 6px;
+    border-radius: 3px;
+    white-space: nowrap;
+    font-size: 14px;
+  }
+  
+  #landing-page.dark-mode #dark-mode-toggle:hover::after {
+    content: "Switch to light mode";
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--light-text);
+  }
+  
